@@ -1,0 +1,27 @@
+{% extends 'core/base.html' %}
+
+<!-- Used to have a different title name in each tab -->
+{% block title %}
+<title>Sonidos SanMiguel</title>
+{% endblock %}
+    
+
+{% load static %}
+
+{% block content %}
+    <div id="video-container">
+        <div class="video-overlay"></div>
+        <div class="video-content">
+            <div class="inner">
+            <h1>Bienvenidos a <em>sonidos SanMiguel</em></h1>
+            <p>25 años de tradición en tu ciudad</p>
+            <p>Renata me la pelas hoy y siempre</p> 
+            </div>
+        </div>
+        {% comment %}
+        <video autoplay="" loop="" muted>
+            <source src=" {% static 'core/img/highway-loop.mp4' %}" type="video/mp4" />
+            <source src=" {% static 'core/img/imagen_reno.jpg' %} "/>
+        </video> {% endcomment %}
+    </div>
+{% endblock %}
