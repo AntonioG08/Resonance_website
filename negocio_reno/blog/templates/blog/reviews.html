@@ -1,24 +1,36 @@
-{% extends 'core/base2.html' %}
+{% extends 'core/base.html' %}
+{% load static %}
 
 <!-- Used to have a different title name in each tab -->
 {% block title %}
-<title>Sonidos SanMiguel</title>
+<title>Resonance | Reseñas</title>
 {% endblock %}
+
+{% url 'blog:reviews' as url_reviews %}   
+
+{% if path == url_reviews %}
+    {% block reviews%}
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap2.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/tooplate-barista.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/vegas.min.css' %}">
+    {% endblock %}
+{% endif %}
     
 
-{% load static %}
+
 
 {% block content %}
     <section class="reviews-section section-padding section-bg" id="section_4">
         <div class="container-reviews">
             <div class="row justify-content-center">
-
+                <!-- Header of the page -->
                 <div class="col-lg-12 col-12 text-center mb-4 pb-lg-2">
-
                     <h2 class="text-white">Reseñas de nuestros clientes</h2>
                 </div>
 
                 <div class="timeline">
+                    <!-- Customer #1 -->
                     <div class="timeline-container timeline-container-left">
                         <div class="timeline-content">
                             <div class="reviews-block">
@@ -26,8 +38,8 @@
                                     <img src="{% static 'core/img/reviews/young-woman-with-round-glasses-yellow-sweater.jpg' %}" class="reviews-block-image img-fluid" alt="">
 
                                     <div class="">
-                                        <h6 class="text-white mb-0">Sandra</h6>
-                                        <em class="text-white"> Customers</em>
+                                        <h6 class="text-white mb-0">Reno Viquez</h6>
+                                        <em class="text-white"> Cliente</em>
                                     </div>
                                 </div>
 
@@ -39,10 +51,10 @@
 
                                         <div class="reviews-group ms-auto">
                                             <i class="fa-solid fa-star"></i>
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -50,6 +62,7 @@
                         </div>
                     </div>
 
+                    <!-- Customer #2 -->
                     <div class="timeline-container timeline-container-right">
                         <div class="timeline-content">
                             <div class="reviews-block">
@@ -57,8 +70,8 @@
                                     <img src="{% static 'core/img/reviews/senior-man-white-sweater-eyeglasses.jpg' %}" class="reviews-block-image img-fluid" alt="">
 
                                     <div class="">
-                                        <h6 class="text-white mb-0">Don</h6>
-                                        <em class="text-white"> Customers</em>
+                                        <h6 class="text-white mb-0">Luis Alverde</h6>
+                                        <em class="text-white"> Cliente</em>
                                     </div>
                                 </div>
 
@@ -66,14 +79,13 @@
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
                                     <div class="d-flex border-top pt-3 mt-4">
-                                        <strong class="text-white">4.5 <small class="ms-2">Rating</small></strong>
+                                        <strong class="text-white">4 <small class="ms-2">Rating</small></strong>
 
                                         <div class="reviews-group ms-auto">
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -81,6 +93,7 @@
                         </div>
                     </div>
 
+                    <!-- Customer #3 -->
                     <div class="timeline-container timeline-container-left">
                         <div class="timeline-content">
                             <div class="reviews-block">
@@ -88,8 +101,8 @@
                                     <img src="{% static 'core/img/reviews/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair.jpg' %}" class="reviews-block-image img-fluid" alt="">
 
                                     <div class="">
-                                        <h6 class="text-white mb-0">Olivia</h6>
-                                        <em class="text-white"> Customers</em>
+                                        <h6 class="text-white mb-0">Scarlett Johanson</h6>
+                                        <em class="text-white"> Cliente</em>
                                     </div>
                                 </div>
 
@@ -97,14 +110,14 @@
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
                                     <div class="d-flex border-top pt-3 mt-4">
-                                        <strong class="text-white">4.5 <small class="ms-2">Rating</small></strong>
+                                        <strong class="text-white">5 <small class="ms-2">Rating</small></strong>
 
                                         <div class="reviews-group ms-auto">
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star-fill"></i>
-                                            <i class="bi-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
                                         </div>
                                     </div>
                                 </div>
