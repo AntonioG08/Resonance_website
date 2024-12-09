@@ -1,2 +1,4 @@
-.template_520_highway
 .ren
+
+#Used this to ignore an entire directory(folder)
+web_templates/

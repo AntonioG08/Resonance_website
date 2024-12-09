@@ -10,13 +10,14 @@
 {% block content %}
     <div class="full-screen-portfolio" id="portfolio">
         <div class="container-fluid">
+            <!-- Service #1 -->
             <div class="col-md-4 col-sm-6">
                 <div class="portfolio-item">
                     <a href="{% static 'core/img/portfolio_item_4.png' %}" data-lightbox="image-1"><div class="thumb">
                         <div class="hover-effect">
                             <div class="hover-content">
                                 <h1>Bodas <em>y bautizos</em></h1>
-                                <p>Servicios para tus eventos</p>
+                                <p>Haciendo único un evento tan especial</p>
                             </div>
                         </div>
                         <div class="image">
@@ -25,13 +26,15 @@
                     </div></a>
                 </div>
             </div>
+
+            <!-- Service #2 -->
             <div class="col-md-4 col-sm-6">
                 <div class="portfolio-item">
-                    <a href="#" data-lightbox="image-1"><div class="thumb">
+                    <a href="{% static 'core/img/portfolio_item_2.png' %}" data-lightbox="image-1"><div class="thumb">
                         <div class="hover-effect">
                             <div class="hover-content">
-                                <h1>raclette <em>taxidermy</em></h1>
-                                <p>Awesome Subtittle Goes Here</p>
+                                <h1>Quinceaños <em>especiales</em></h1>
+                                <p>No puede faltar la buena música</p>
                             </div>
                         </div>
                         <div class="image">
@@ -40,13 +43,15 @@
                     </div></a>
                 </div>
             </div>
+
+            <!-- Service #3 -->
             <div class="col-md-4 col-sm-6">
                 <div class="portfolio-item">
-                    <a href="#" data-lightbox="image-1"><div class="thumb">
+                    <a href="{% static 'core/img/portfolio_item_3.png' %}" data-lightbox="image-1"><div class="thumb">
                         <div class="hover-effect">
                             <div class="hover-content">
-                                <h1>humblebrag <em>brunch</em></h1>
-                                <p>Awesome Subtittle Goes Here</p>
+                                <h1>Cumpleaños <em>alegres</em></h1>
+                                <p>La diversión depende en gran medida de la música</p>
                             </div>
                         </div>
                         <div class="image">
@@ -55,13 +60,15 @@
                     </div></a>
                 </div>
             </div>
+
+            <!-- Service #4 -->
             <div class="col-md-4 col-sm-6">
                 <div class="portfolio-item">
-                    <a href="#" data-lightbox="image-1"><div class="thumb">
+                    <a href="{% static 'core/img/portfolio_item_1.png' %}" data-lightbox="image-1"><div class="thumb">
                         <div class="hover-effect">
                             <div class="hover-content">
-                                <h1>Succulents <em>chambray</em></h1>
-                                <p>Awesome Subtittle Goes Here</p>
+                                <h1>Posadas <em>y eventos</em></h1>
+                                <p>No te preocupes por la música, ¡solo diviertete!</p>
                             </div>
                         </div>
                         <div class="image">
@@ -70,13 +77,15 @@
                     </div></a>
                 </div>
             </div>
+
+            <!-- Service #5 -->
             <div class="col-md-4 col-sm-6">
                 <div class="portfolio-item">
-                    <a href="#" data-lightbox="image-1"><div class="thumb">
+                    <a href="{% static 'core/img/portfolio_item_5.png' %}" data-lightbox="image-1"><div class="thumb">
                         <div class="hover-effect">
                             <div class="hover-content">
-                                <h1>freegan <em>aesthetic</em></h1>
-                                <p>Awesome Subtittle Goes Here</p>
+                                <h1>Eventos <em>empresariales</em></h1>
+                                <p>Brinda un gran momento a tus empleados, socios, o inversionistas</p>
                             </div>
                         </div>
                         <div class="image">
@@ -85,24 +94,30 @@
                     </div></a>
                 </div>
             </div>
+
+            <!-- Service #6 -->
             <div class="col-md-4 col-sm-6">
                 <div class="portfolio-item">
-                    <a href="#" data-lightbox="image-1"><div class="thumb">
+                    <a href="{% static 'core/img/portfolio_item_7.png' %}" data-lightbox="image-1"><div class="thumb">
                         <div class="hover-effect">
                             <div class="hover-content">
-                                <h1>taiyaki <em>vegan</em></h1>
-                                <p>Awesome Subtittle Goes Here</p>
+                                <h1>Reno <em>ya págame</em></h1>
+                                <p>No se me ocurre que más poner ayuda</p>
                             </div>
                         </div>
                         <div class="image">
-                            <img src="{% static 'core/img/portfolio_item_6.png' %}">
+                            <img src="{% static 'core/img/portfolio_item_7.png' %}">
                         </div>
                     </div></a>
                 </div>
             </div>
+
+            {% comment %}
+            <!-- Stored this as comment for the moment. Not sure how many rows of images will be needed, I think that 9 are too much, currently 
+             6 should be enough, but I've saved this lines of code just in case they are needed later. I might erase these lines in future versions-->
             <div class="col-md-4 col-sm-6">
                 <div class="portfolio-item">
-                    <a href="#" data-lightbox="image-1"><div class="thumb">
+                    <a href="{% static 'core/img/portfolio_item_7.png' %}" data-lightbox="image-1"><div class="thumb">
                         <div class="hover-effect">
                             <div class="hover-content">
                                 <h1>Thundercats <em>santo</em></h1>
@@ -117,7 +132,7 @@
             </div>
             <div class="col-md-4 col-sm-6">
                 <div class="portfolio-item">
-                    <a href="#" data-lightbox="image-1"><div class="thumb">
+                    <a href="{% static 'core/img/portfolio_item_8.png' %}" data-lightbox="image-1"><div class="thumb">
                         <div class="hover-effect">
                             <div class="hover-content">
                                 <h1>wayfarers <em>yuccie</em></h1>
@@ -132,19 +147,20 @@
             </div>
             <div class="col-md-4 col-sm-6">
                 <div class="portfolio-item">
-                    <a href="#" data-lightbox="image-1"><div class="thumb">
+                    <a href="{% static 'core/img/portfolio_item_6.png' %}" data-lightbox="image-1"><div class="thumb">
                         <div class="hover-effect">
                             <div class="hover-content">
-                                <h1>disrupt <em>street</em></h1>
+                                <h1>taiyaki <em>vegan</em></h1>
                                 <p>Awesome Subtittle Goes Here</p>
                             </div>
                         </div>
                         <div class="image">
-                            <img src="{% static 'core/img/portfolio_item_9.png' %}">
+                            <img src="{% static 'core/img/portfolio_item_6.png' %}">
                         </div>
                     </div></a>
                 </div>
             </div>
+            {% endcomment %}
         </div>
     </div>
 {% endblock %}
