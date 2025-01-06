@@ -9,13 +9,14 @@
 {% load static %}
 
 {% block content %}
-    <div id="video-container">
+    <div id="video-container" style="background-image: url({% static 'core/img/Portada.jpg' %});">
+        {% comment %} 'core/img/imagen_reno.jpg' {% endcomment %}
         <div class="video-overlay"></div>
         <div class="video-content">
             <div class="inner">
             <h1>Bienvenidos a <em>Resonance - San Miguel</em></h1>
             <p>25 años de tradición en tu ciudad</p>
-            <p>Reno me debes $1000 ya transfiereme porfavor</p> 
+            <p>Reno me debes $2500 ya transfiereme porfavor</p> 
             </div>
         </div>
         {% comment %}
