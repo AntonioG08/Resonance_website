@@ -19,9 +19,9 @@ from django.urls import path, include
 
 
 urlpatterns = [
-    path('accounts/', include('django.contrib.auth.urls')),
     # path('accounts/', include('registration.urls')),
-    path('admin/', admin.site.urls),
+    path('admin-resonance-users-only-restricted/', admin.site.urls, name='admin'), #Used to enter to the admin panel
+    path('admin-resonance-users-only/', include('registration.urls')), #Used to modify and personalize the admin login view
     path('', include('core.urls')), #Used to import all the URLs paths of 'Core'
     path('blog/', include('blog.urls')), #Used to import all the URLs paths of 'Blog'
 ]

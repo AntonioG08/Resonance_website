@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- General HTML configuration and setting -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <!-- Used to have a different title name in each tab -->
+        <title>Iniciar sesión</title>
+    </head>
+
+<body>
+    <!-- Header & navigation bar section-->
+    <section id="infinite" class="text-white tm-font-big tm-parallax">
+        <!-- Main content-->
+         <div class="text-center tm-hero-text-container">
+            <div class="container align-center">
+                <div class="shadow">
+                    <h1 class="display-4 bg-dark text-white py-4 px-3 rounded-top border border-dark my-0">Iniciar sesión</h1>
+                    <div class="rounded-bottom border border-dark  bg-light">
+            
+                        <!-- Form with the fields to fill -->
+                        <form class="needs-validation p-4" method="post" novalidate>
+                            {% csrf_token %}
+                            <!-- Div used for the 'Username' field Holaa-->
+                            <div class="input-group my-2 pt-4">
+                                <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                                <input type="text" class="form-control" placeholder="Usuario" name="username" required>
+                            </div>
+            
+                            <!-- Div used for the 'Password' field -->
+                            <div class="input-group my-2">
+                                <span class="input-group-text"><i class="fa-solid fa-key"></i></span>
+                                <input type="text" class="form-control" placeholder="Contraseña" name="password" required>
+                            </div>
+            
+                            <!-- Submit button with the legend 'Enviar' -->
+                            <div class="d-flex mt-1 flex-wrap justify-content-between text-secondary align-items-baseline">
+                                <button type="submit" class="btn btn-outline-dark mt-3">Enviar</button>
+                                <p>¿Aún no tienes cuenta? <a href="#">¡Regístrate!</a> | ¿Olvidaste tu contraseña? <a href="#">Cámbiala</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </section>
+
+
+    <!-- Footer section -->
+    <footer>
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <p>Copyright &copy; 2001 | Resonance s.a. de c.v.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
