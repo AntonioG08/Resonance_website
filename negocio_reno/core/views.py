@@ -13,9 +13,4 @@ class Home(View):
 class Us(View):
     def get(self, request):
         return render(request, 'core/us.html')
-    
 
-#Class used to render the 'Gallery & services' template which contains information about us
-class Gallery(View):
-    def get(self, request):
-        return render(request, 'core/gallery.html')

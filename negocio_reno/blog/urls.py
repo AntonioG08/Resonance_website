@@ -1,5 +1,5 @@
 from django.urls import path
-from blog import views
+from blog import views #IMPORTANTE importar las vistas de la misma app y no de otra
 
 
 app_name = 'blog'

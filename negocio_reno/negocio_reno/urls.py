@@ -24,4 +24,5 @@ urlpatterns = [
     path('admin-resonance-users-only/', include('registration.urls')), #Used to modify and personalize the admin login view
     path('', include('core.urls')), #Used to import all the URLs paths of 'Core'
     path('blog/', include('blog.urls')), #Used to import all the URLs paths of 'Blog'
+    path('services/', include('services.urls')) #Used to import all the URLs paths of 'Services'
 ]
