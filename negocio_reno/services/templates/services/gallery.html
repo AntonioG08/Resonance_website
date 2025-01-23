@@ -6,29 +6,31 @@
 {% endblock %}
     
 {% load static %}
-
 {% block content %}
     <div class="full-screen-portfolio" id="portfolio">
         <div class="container-fluid">
-            <!-- Service #1 -->
+            {% for servicio in servicios%}
+            <!-- Service -->
             <div class="col-md-4 col-sm-6">
                 <div class="portfolio-item">
-                    <a href="{% static 'core/img/Service09.jpeg' %}" data-lightbox="image-1"><div class="thumb">
+                    <a href="{{servicio.image.url}}" data-lightbox="image-1"><div class="thumb">
                         <div class="hover-effect">
                             <div class="hover-content">
-                                <h1><em>Renta de equipo de </em>audio profesional </h1>
+                                <h1>{{servicio.title}} </h1>
                                 {% comment %} This is an invisible character ‎ , I used it for styling purposes, will replace it later with CSS/JS styling {% endcomment %}
                                 <p> ‎  </p>
 
                             </div>
                         </div>
                         <div class="image">
-                            <img src="{% static 'core/img/Service09.jpeg' %}">
+                            <img src="{{servicio.image.url}}">
                         </div>
                     </div></a>
                 </div>
             </div>
+            {% endfor %}
 
+            {% comment %}
             <!-- Service #2 -->
             <div class="col-md-4 col-sm-6">
                 <div class="portfolio-item">
@@ -114,7 +116,7 @@
                 </div>
             </div>
 
-            <!-- Service -->
+            <!-- Service #7-->
             <div class="col-md-4 col-sm-6">
                 <div class="portfolio-item">
                     <a href="{% static 'core/img/Service11.jpeg' %}" data-lightbox="image-1"><div class="thumb">
@@ -131,7 +133,7 @@
                 </div>
             </div>
 
-            <!-- Service -->
+            <!-- Service #8-->
             <div class="col-md-4 col-sm-6">
                 <div class="portfolio-item">
                     <a href="{% static 'core/img/Service04.jpeg' %}" data-lightbox="image-1"><div class="thumb">
@@ -148,7 +150,7 @@
                 </div>
             </div>
 
-            <!-- Service -->
+            <!-- Service #9-->
             <div class="col-md-4 col-sm-6">
                 <div class="portfolio-item">
                     <a href="{% static 'core/img/Service08.jpeg' %}" data-lightbox="image-1"><div class="thumb">
@@ -165,10 +167,9 @@
                 </div>
             </div>
 
-            {% comment %}
+            
             <!-- Stored this as comment for the moment. Not sure how many rows of images will be needed, I think that 9 are too much, currently 
              6 should be enough, but I've saved this lines of code just in case they are needed later. I might erase these lines in future versions-->
-
             {% endcomment %}
         </div>
     </div>
