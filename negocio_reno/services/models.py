@@ -12,7 +12,11 @@ class Services(models.Model):
     class Meta:
         verbose_name = 'Servicio'
         verbose_name_plural = 'Servicios'
-        ordering = ['-updated']
+        #El 'ordering' es muy importante, es la manera en como se ordenarán los datos guardados en el panel de administrador
+        #La base de datos los ordena por su Primary Key, pero django permite visualizarlos con un orden distinto, por ejemplo
+        #La fecha de creación, actualización, etc etc. Esto importa por que también impacta el orden en como se verán los 
+        #Servicios en la página/vista de 'Gallery'
+        ordering = ['created']
     
     # Used to show a best 'title' or 'Placeholder' of the model in the admin tab/view
     def __str__(self):
