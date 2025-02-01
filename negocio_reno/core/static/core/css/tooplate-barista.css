@@ -110,7 +110,7 @@ button {
 
 a {
   display: inline-block;
-  color: var(--primary-color);
+  color: var(--dark-color);
   text-decoration: none;
 }
 
@@ -741,7 +741,7 @@ strong {
   REVIEWS              
 -----------------------------------------*/
 .reviews-section {
-  background-color: #7c5c52;
+  background-color: #33777e;
 }
 
 .reviews-block {
@@ -756,7 +756,7 @@ strong {
 }
 
 .reviews-block-image-wrap {
-  background-image: url('../img/mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg');
+  background-image: url('../img/SMA_Reviews_background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
