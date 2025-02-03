@@ -28,7 +28,7 @@ Deploy processing (for developers):
   static folders. 
 - Fourth | After the Static files are migrated, go to the folder of the main
   app and search in the files the one named 'settings.py' file to make some 
-  modifications. Turn the DEBUG variable to FALSE for security reasons. After 
+  modifications. Turn the DEBUG variable to 'False' for security reasons. After 
   doing this, lets go to the file 'urls.py' and in the MEDIA URL at the bottom,
   change the conditional to 'if not settings.DEBUG' since DEBUG is now set to
   false.

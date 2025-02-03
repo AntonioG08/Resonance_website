@@ -1,0 +1,159 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+<!-- Used to have a different title name in each tab -->
+{% block title %}
+<title>Resonance | Contáctanos</title>
+{% endblock %}
+
+{% url 'contact:contact-us' as url_contact %}   
+
+{% if path == url_contact %}
+    {% block reviews%}
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap2.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/tooplate-barista.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/vegas.min.css' %}">
+    {% endblock %}
+{% endif %}
+    
+
+
+
+{% block content %}
+
+<section class="contact-section section-padding" id="section_5">
+    <div class="container">
+        {% comment %} The page is divided in 2 rows, the upper one for the form and the google map, and the lower one for 
+        general information {% endcomment %}
+        <!-- Upper row -->
+        <div class="row pt-2 mt-5">   
+            <div class="col-lg-12 col-12">
+                <em class="text-white" style="font-size:15px">Encantados de ayudar</em>
+                <h2 class="text-white mb-4 pb-lg-2">¡Contáctanos!</h2>
+            </div>
+
+            <div class="col-lg-6 col-12">
+                <form action="#" method="post" class="custom-form contact-form" role="form">
+
+                <!-- Row with the form and the google map -->
+                <div class="row">
+                    
+                    <div class="col-lg-6 col-12">
+                        <label for="name" class="form-label">Nombre de contacto <sup class="text-danger">*</sup></label>
+
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Nombre" required="">
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <label for="email" class="form-label">Correo electrónico</label>
+
+                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="correo_ejemplo@gmail.com" required="">
+                    </div>
+
+                    <div class="col-12">
+                        <label for="message" class="form-label">¿En qué podemos ayudarle?</label>
+
+                        <textarea name="message" rows="4" class="form-control" id="message" placeholder="Mensaje" required=""></textarea>
+                        
+                    </div>
+                </div>
+
+                <!-- Button to submit -->
+                <div class="col-lg-5 col-12 mx-auto mt-1">
+                    <button type="submit" class="form-control">Enviar mensaje</button>
+                </div>
+            </form>
+            </div>
+
+            <div class="col-lg-6 col-12 mx-auto mt-5 mt-lg-0 ps-lg-5">
+                <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12536.06816737975!2d-100.7486030974485!3d20.91250615463999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842b51af9871bc0f%3A0x653101031d07b0a4!2sSan%20Miguel%20de%20Allende%2C%20Gto.!5e0!3m2!1ses!2smx!4v1738519894578!5m2!1ses!2smx" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                {% comment %}
+                <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5039.668141741662!2d72.81814769288509!3d19.043340656729775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c994f34a7355%3A0x2680d63a6f7e33c2!2sLover%20Point!5e1!3m2!1sen!2sth!4v1692722771770!5m2!1sen!2sth" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+                {% endcomment %}
+            </div>
+        </div>
+
+        <!-- Lower row -->
+        <div class="row mt-5 pt-4 mb-5 pb-5">
+            <!-- Location text -->
+            <div class="col-lg-4 col-12 me-auto">
+                <em class="text-white d-block mb-4">¿Dónde puedes encontrarnos?</em>
+
+                <strong class="text-white">
+                    <i class="bi-geo-alt me-2"></i>
+                    San Miguel de Allende, Guanajuato, México.
+                </strong>
+
+                <ul class="social-icon mt-4">
+                    <li class="social-icon-item">
+                        <a href="#" class="social-icon-link bi-facebook">
+                        </a>
+                    </li>
+
+                    <li class="social-icon-item">
+                        <a href="https://x.com/minthu" target="_new" class="social-icon-link bi-twitter">
+                        </a>
+                    </li>
+
+                    <li class="social-icon-item">
+                        <a href="#" class="social-icon-link bi-whatsapp">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact text -->
+            <div class="col-lg-3  col-12 mt-4 mb-3 mt-lg-0 mb-lg-0">
+                <em class="text-white d-block mb-4">Información de contacto</em>
+
+                <p class="d-flex mb-1">
+                    <strong class="me-2 text-white">Phone:</strong>
+                    <a href="#" class="site-footer-link">
+                        (+52) 415-149-9872
+                    </a>
+                </p>
+
+                <p class="d-flex">
+                    <strong class="me-2 text-white">Email:</strong>
+
+                    <a href="mailto:audiosma.resonance@gmail.com" class="site-footer-link">
+                        audiosma.resonance@gmail.com
+                    </a>
+                </p>
+            </div>
+
+            {% comment %}
+            <!-- Opening hours text -->
+            <div class="col-lg-5 col-12">
+                <em class="text-white d-block mb-4">Opening Hours.</em>
+
+                <ul class="opening-hours-list">
+                    <li class="d-flex">
+                        Monday - Friday
+                        <span class="underline"></span>
+
+                        <strong>9:00 - 18:00</strong>
+                    </li>
+
+                    <li class="d-flex">
+                        Saturday
+                        <span class="underline"></span>
+
+                        <strong>11:00 - 16:30</strong>
+                    </li>
+
+                    <li class="d-flex">
+                        Sunday
+                        <span class="underline"></span>
+
+                        <strong>Closed</strong>
+                    </li>
+                </ul>
+            </div>
+            {% endcomment %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}

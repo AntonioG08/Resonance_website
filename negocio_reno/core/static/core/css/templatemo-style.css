@@ -62,14 +62,31 @@ nav .logo {
   margin-left: 30px;
 }
 
+/*------ NOTE -------- */
+/*For the font-size to be responsive, I used a calculation that checks the view ports width. This 
+  means that it detects the width of the screen and modifies the font size. However, it gaved weird
+  font-size values for bigger screens such as laptops or monitors. Therefore, I used the function
+  media screen and used a min-width so that when it detects a screen of minimum 950px, it sets the 
+  font-size to 28px without any further modification. */
+
 nav .logo a {
-  font-size: 28px;
+  font-size: calc(.5em + 4.2vw);
   line-height: 80px;
   text-transform: uppercase;
   color: #fff;
   text-decoration: none;
   letter-spacing: 0.5px;
 }
+
+
+@media screen and (min-width : 950px)
+{
+  nav .logo a
+  {
+    font-size: 28px;
+  }
+}
+/* -------- NOTE ENDING ---------- */
 
 nav .logo em {
   font-style: normal;
