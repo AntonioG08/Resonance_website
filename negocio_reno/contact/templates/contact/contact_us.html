@@ -87,12 +87,12 @@
 
                 <ul class="social-icon mt-4">
                     <li class="social-icon-item">
-                        <a href="#" class="social-icon-link bi-facebook">
+                        <a href="https://www.facebook.com/people/Resonance-Audio/61569283534082/?locale=es_LA" class="social-icon-link bi-facebook">
                         </a>
                     </li>
 
                     <li class="social-icon-item">
-                        <a href="https://x.com/minthu" target="_new" class="social-icon-link bi-twitter">
+                        <a href="https://www.instagram.com/resonanceaudiosma/?utm_source=ig_web_button_share_sheet" target="_new" class="social-icon-link bi-instagram">
                         </a>
                     </li>
 
@@ -108,15 +108,23 @@
                 <em class="text-white d-block mb-4">Información de contacto</em>
 
                 <p class="d-flex mb-1">
+                    {%comment%} PLEASE refer to the file tootplate-barista css to read the note at 
+                    'contact-phone-mobilescreen' to understand why the phone number seems to be repeated
+                    {%endcomment%}
                     <strong class="me-2 text-white">Phone:</strong>
-                    <a href="#" class="site-footer-link">
+                    <a class="site-footer-link contact-phone-pcsreen" style="all: unset;
+                                                                             color: rgba(255, 255, 255, 0.75);
+                                                                             font-size: var(--btn-font-size);
+                                                                             transition: all 0.3s;">
+                        (+52) 415-149-9872
+                    </a>
+                    <a href="tel: 415-149-9872" class="site-footer-link contact-phone-mobilescreen">
                         (+52) 415-149-9872
                     </a>
                 </p>
 
                 <p class="d-flex">
                     <strong class="me-2 text-white">Email:</strong>
-
                     <a href="mailto:audiosma.resonance@gmail.com" class="site-footer-link">
                         audiosma.resonance@gmail.com
                     </a>

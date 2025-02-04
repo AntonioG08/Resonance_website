@@ -1192,3 +1192,26 @@ strong {
   }
 }
 
+/*---------- PERSONAL ADDINGS ----------*/
+
+/*---------- NOTE ----------*/
+/*The reason why in the HTML 'contact-us.html' seems to have the phone number
+  repeated, is because only one is displayed, not both at the same time. When
+  the screen is wider (pc or laptop screens) it is displayed only the text, NOT
+  the link to begin a phone call. Otherwise, in less wider screens (i.e. 650 px
+  or less) the text is a link to begin a phone call in the phone application. 
+  This is done because in a cell phone is posible to click the link and begin 
+  a phone call, however, PCs and Laptops mostly don't have the functionality to
+  do phone calls, therefore the possibility is turned OFF.*/
+@media (max-width: 650px) {
+  .contact-phone-pcscreen {
+    display: none;
+  }
+}
+
+@media (min-width: 651px) {
+  .contact-phone-mobilescreen {
+    display: none;
+  }
+}
+/*--------- END NOTE --------*/

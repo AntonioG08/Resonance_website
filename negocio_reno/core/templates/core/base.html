@@ -47,7 +47,7 @@
     <!-- Header & navigation bar section-->
     <nav>
         <div class="logo">
-            <a href="{% url 'core:home' %}">San Miguel | <em>Resonance</em></a>
+            <a href="{% url 'core:home' %}">San Miguel || <em>Resonance</em></a>
         </div>
         <div class="menu-icon">
             <span></span>
@@ -74,9 +74,11 @@
                     <li>
                         <a href="{% url 'services:gallery' %}">Galería y servicios</a>
                     </li>
+                    {%comment%}
                     <li>
                         <a href="{% url 'blog:events' %}">Eventos pasados</a>
                     </li>
+                    {%endcomment%}
                     <li>
                         <a href="{% url 'contact:contact-us' %}">Contáctanos</a>
                     </li>
