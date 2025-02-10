@@ -15,9 +15,9 @@ easier to deploy a python project based on the Django framework.
 Deploy processing (for developers): 
 - First | in PythonAnyWhere (PAW) check if there is anything modified using 
   'git status', if there are any modifications (which probably are), 
-  eliminate them. We can modify the files from the PythonAnyWhere console, 
-  but it's not recommended, the oficial version should be the one in GitHub 
-  and we only pull it to PAW. 
+  eliminate them with 'git reset --hard'. We can modify the files from the 
+  PythonAnyWhere console, but it's not recommended, the oficial version 
+  should be the one in GitHub and we only pull it to PAW. 
 - Second | After the status in the PAW console is the same as the GitHub
   repository (no file modified or any change reistered untracked etc etc), 
   we use 'Git pull' to pull the most current version from the repository.

@@ -1209,9 +1209,10 @@ strong {
   }
 }
 
+
 @media (min-width: 651px) {
   .contact-phone-mobilescreen {
     display: none;
   }
-}
+} 
 /*--------- END NOTE --------*/
