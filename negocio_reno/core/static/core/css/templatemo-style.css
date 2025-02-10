@@ -803,12 +803,12 @@ footer a:hover {
 
  .services {
   background-color: #232323;
-  padding: 65px 0px;
+  padding: 55px 0px;
  }
 
  .services .service-item {
-  margin: 15px 0px;
-  padding: 20px;
+  margin: 10px 0px;
+  padding: 15px;
   text-align: center;
   transition: all 0.5s;
  }
